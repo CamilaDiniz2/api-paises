@@ -1,0 +1,91 @@
+body {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.country-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: centery;
+
+  height: 130px;
+  width: 500px;
+
+  background-color: #d4d1d1;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.country:hover {
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+.buttonAdd,
+.buttonSubtract {
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-right: 24px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttonAdd {
+  background-color: #0abe22;
+}
+
+.buttonAdd:hover,
+.buttonSubtract:hover {
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+.buttonAdd:hover {
+  box-shadow: 2px 2px 2px #0abe22;
+}
+
+.buttonSubtract {
+  background-color: rgb(218, 27, 27);
+}
+
+.buttonSubtract:hover {
+  box-shadow: 2px 2px 2px rgb(214, 29, 29);
+}
+
+.countryFlag img,
+.imageFlag {
+  width: 100px;
+  height: 50px;
+  margin: 8px;
+}
+
+.countryInfo {
+  margin-left: 32px;
+}
